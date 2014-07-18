@@ -1,0 +1,23 @@
+---
+title: SquareFormat
+---
+
+<section>
+  <header>
+    <h1>SquareFormat</h1>
+    <h2>Discover Instagram photgraphers</h2>
+  </header>
+
+  <nav>
+    <%= link_to 'Post a photographer', '' %>
+    <%= link_to 'Logout', '' %>
+    <%= image_tag('http://photos-d.ak.instagram.com/hphotos-ak-xpa1/10499101_543131575791883_1380907711_a.jpg') %>
+  </nav>
+<ul>
+  <h3>16th of July</h3>
+  <% 1.times do %>
+    <li>
+      <%= recent_media('local_milk') %>
+    </li>
+  <% end %>
+</ul>
