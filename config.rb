@@ -55,9 +55,21 @@ helpers do
     user_id = users[0].id
     html = ''
     for photo in client.user_recent_media(user_id, count: 3)
-      html << "<div style='float:left; width: 33%;'><img src='#{photo.images.standard_resolution.url}', style='max-width: 100%;'></div>"
+      html << "<div class='table-cell'><img src='#{photo.images.standard_resolution.url}' class='fit opacity-25'></div>"
     end
     html
+  end
+
+  def avatar(username)
+    client = Instagram.client()
+    users = Instagram.user_search(username)
+    users[0].profile_picture
+  end
+
+  def full_name(username)
+    client = Instagram.client()
+    users = Instagram.user_search(username)
+    users[0].full_name
   end
 end
 

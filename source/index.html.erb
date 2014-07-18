@@ -3,21 +3,31 @@ title: SquareFormat
 ---
 
 <section>
-  <header>
-    <h1>SquareFormat</h1>
-    <h2>Discover Instagram photgraphers</h2>
+  <header class="bg-light-yellow p3">
+    <h1 class="h1 m0 dark-gray">SquareFormat</h1>
+    <h2 class="p m0 regular dark-gray">Discover Instagram photgraphers</h2>
   </header>
 
-  <nav>
-    <%= link_to 'Post a photographer', '' %>
-    <%= link_to 'Logout', '' %>
-    <%= image_tag('http://photos-d.ak.instagram.com/hphotos-ak-xpa1/10499101_543131575791883_1380907711_a.jpg') %>
-  </nav>
-<ul>
-  <h3>16th of July</h3>
-  <% 1.times do %>
-    <li>
-      <%= recent_media('local_milk') %>
-    </li>
-  <% end %>
-</ul>
+  <article class="p3">
+    <ul class="list-reset">
+      <% data.photographers.each do |photographer| %>
+        <li class="mb2 block clearfix">
+          <a href="http://instagram.com/<%= photographer %>" class="dark-gray">
+            <section class="relative">
+              <header class="z1 clearfix absolute absolute-center">
+                <%= image_tag(avatar(photographer), class: 'left mr2') %>
+                <div class="oh">
+                  <h1 class="h1 m0 ellipsis">@<%= photographer %></h1>
+                  <h2 class="p m0 regular ellipsis"><%= full_name(photographer) %></h2>
+                </div>
+              </header>
+              <div class="table table-fixed">
+                <%= recent_media(photographer) %>
+              </div>
+            </section>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </article>
+</section>
