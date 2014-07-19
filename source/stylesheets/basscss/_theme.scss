@@ -6,7 +6,7 @@ body {
 }
 
 #yeezus {
-  max-width: 90%;
+  max-width: 1400px;
   margin: 0px auto;
 }
 
@@ -29,10 +29,6 @@ a {
 
 .opacity-25 {
   opacity: 0.25;
-
-  &:hover {
-    opacity:1;
-  }
 }
 
 .ellipsis {
@@ -43,20 +39,8 @@ header {
   h1 {
     font-family: "lust",sans-serif;
   }
- 
+
   h2 {
      font-family: "nimbus-sans-extended",sans-serif;
-  }
-}
-
-.insta-people {
-
-  li {
-
-    &:hover {
-      header {
-        bottom: -68%;
-      }
-    }
   }
 }
