@@ -28,7 +28,7 @@ a {
 }
 
 .opacity-25 {
-  opacity: 0.25;
+  opacity: 0.4;
 
   &:hover {
     opacity:1;
@@ -52,10 +52,11 @@ header {
 .insta-people {
 
   li {
-
     &:hover {
       header {
-        bottom: -68%;
+        .insta-meta {
+          opacity:0;
+        }
       }
     }
   }
