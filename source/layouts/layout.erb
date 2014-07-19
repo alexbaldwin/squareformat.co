@@ -8,6 +8,10 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
     <%= stylesheet_link_tag "basscss/basscss" %>
     <%= javascript_include_tag  "all" %>
+
+    <script type="text/javascript" src="//use.typekit.net/lpq6eur.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
   </head>
   <body class="<%= page_classes %>">
     <%= yield %>
