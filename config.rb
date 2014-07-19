@@ -16,7 +16,7 @@ helpers do
     user_id = users[0].id
     html = ''
     for photo in client.user_recent_media(user_id, count: 3)
-      html << "<div class='table-cell'><img src='#{photo.images.standard_resolution.url}' class='fit opacity-25'></div>"
+      html << "<div class='table-cell'><img src='#{photo.images.standard_resolution.url}' class='fit opacity-25 smooth-sailing></div>"
     end
     html
   end

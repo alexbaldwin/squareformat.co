@@ -9,12 +9,12 @@ title: SquareFormat
   </header>
 
   <article>
-    <ul class="list-reset">
+    <ul class="list-reset insta-people">
       <% data.photographers.each do |photographer| %>
         <li class="mb2 block clearfix">
           <a href="http://instagram.com/<%= photographer %>" class="dark-gray">
             <section class="relative">
-              <header class="z1 clearfix absolute absolute-center">
+              <header class="z1 clearfix absolute absolute-center smooth-sailing">
                 <%= image_tag(avatar(photographer), class: 'left mr2') %>
                 <div class="oh">
                   <h1 class="h1 m0 ellipsis">@<%= photographer %></h1>
