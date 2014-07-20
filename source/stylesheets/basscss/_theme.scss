@@ -12,6 +12,8 @@ body {
 
 
 #global-nav {
+  padding: 5% 0;
+
   .logo{
     text-align: center;
   }
@@ -58,7 +60,7 @@ a {
 }
 
 .opacity-25 {
-  opacity: 0.25;
+  opacity: 0.5;
 
   &:hover {
     opacity:1;
