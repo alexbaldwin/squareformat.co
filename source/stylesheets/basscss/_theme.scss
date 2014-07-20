@@ -6,15 +6,45 @@ body {
 }
 
 #yeezus {
-  max-width: 90%;
+  max-width: 1500px;
   margin: 0px auto;
+}
+
+
+#global-nav {
+  .logo{
+    text-align: center;
+  }
+}
+
+h2,h3 {
+  font-family: "futura-pt",sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: #2e2e2e;
+  line-height: 0;
+  margin: 0;
+
+  sup {
+    font-size: 20px;
+  }
+}
+
+article {
+  .list-date {
+    text-align: center;
+    padding: 6% 0;
+  }
 }
 
 a {
   color: $blue;
   text-decoration: none;
   &:hover {
-    color: darken($blue, 10%);
+    color: #000;
     text-decoration: underline;
   }
 }
@@ -28,7 +58,7 @@ a {
 }
 
 .opacity-25 {
-  opacity: 0.4;
+  opacity: 0.25;
 
   &:hover {
     opacity:1;
@@ -43,22 +73,7 @@ header {
   h1 {
     font-family: "lust",sans-serif;
   }
- 
-  h2 {
-     font-family: "nimbus-sans-extended",sans-serif;
-  }
 }
 
 .insta-people {
-
-  li {
-    &:hover {
-      header {
-        .insta-meta {
-          opacity:0;
-          z-index: -3;
-        }
-      }
-    }
-  }
 }

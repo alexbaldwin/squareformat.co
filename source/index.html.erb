@@ -3,12 +3,18 @@ title: SquareFormat
 ---
 
 <section>
-  <header class="bg-light-yellow p3">
-    <h1 class="h1 m0 dark-gray">SquareFormat</h1>
-    <h2 class="p m0 regular dark-gray">Discover Instagram photgraphers</h2>
+  <header id="global-nav" class="bg-light-yellow p3">
+    <div class="logo">
+      <h1 class="h1 m0 dark-gray">SquareFormat</h1>
+      <h2 class="p m0 regular dark-gray">Discover Instagram photgraphers</h2>
+    </div>
   </header>
 
   <article>
+    <div class="list-date">
+      <h3>19<sup>th</sup> July</h3>
+    </div>
+    
     <ul class="list-reset insta-people">
       <% data.photographers.each do |photographer| %>
         <li class="mb2 block clearfix">
