@@ -165,12 +165,43 @@ footer {
 /* Smartphones (portrait and landscape) hiding all the edit controls ----------- */
 @media only screen and (max-width : 560px),only screen and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : landscape) and (device-aspect-ratio: 40/71) {
 
+  
+
   .opacity-25 {
     opacity: 0.4;
 
     &:hover {
       opacity:1;
+     }
   }
+
+
+  #global-nav {
+    .logo {
+
+      h1 {
+        font-size: 43px;
+      }
+
+      h2 {
+        font-size: 14px;
+      }
+    }
+
+    a.contribute {
+      font-size: 12px;
+    }
+  }
+
+  article {
+    .list-date {
+      padding: 50px 0 20px 0;
+      
+      h3 {
+        font-size: 29px;
+
+      }
+    }
   }
 
 
