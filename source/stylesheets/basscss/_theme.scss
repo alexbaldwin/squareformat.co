@@ -195,6 +195,25 @@ footer {
   }
   
 
+  .social-push {
+  width: 90%;
+  margin: 0px auto;
+  padding: 0 0 15% 0;
+  text-align: center;
+
+  p {
+    font-size: 16px;
+
+    a {
+      border-bottom: solid 2px #000;
+    }
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
   footer {
     width:90%;
     margin: 0px auto 40px;
