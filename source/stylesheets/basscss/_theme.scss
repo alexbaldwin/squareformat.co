@@ -161,3 +161,54 @@ footer {
 .bb-2 {
   border-bottom: 2px solid #000;
 }
+
+/* Smartphones (portrait and landscape) hiding all the edit controls ----------- */
+@media only screen and (max-width : 560px),only screen and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : landscape) and (device-aspect-ratio: 40/71) {
+
+  .insta-people {
+
+    li {
+      margin-top: 15%;
+    }
+
+        header {
+          padding:0 0;
+          width: 100%;
+          top:-30px;
+          text-align: center;
+          display: block;
+
+          a {
+            color:#000;
+          }
+
+          img {
+            display: inline-block;
+            float: none;
+
+            &.mr2 {
+              margin: 0;
+            }
+
+          }
+
+          .insta-meta {
+            width: 100%;
+            text-align: center;
+          }
+        }
+
+        .table-cell {
+          display: inline-block;
+          table-layout: none;
+          width: 50%; 
+          float: left;
+
+          &:first-child {
+            width:100%;
+          }
+
+          }
+  }
+
+}
