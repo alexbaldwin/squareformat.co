@@ -165,7 +165,22 @@ footer {
 /* Smartphones (portrait and landscape) hiding all the edit controls ----------- */
 @media only screen and (max-width : 560px),only screen and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : landscape) and (device-aspect-ratio: 40/71) {
 
+  .opacity-25 {
+    opacity: 0.4;
+
+    &:hover {
+      opacity:1;
+  }
+  }
+
+
   .insta-people {
+
+    .curator {
+      top: 70%;
+      left:55%;
+      width: 40px;
+    }
 
     li {
       margin-top: 15%;
@@ -185,14 +200,16 @@ footer {
           img {
             display: inline-block;
             float: none;
+            width: 80px;
 
             &.mr2 {
-              margin: 0;
+              margin: 0 0;
             }
 
           }
 
           .insta-meta {
+            margin: 20px 0 0 0;
             width: 100%;
             text-align: center;
           }
