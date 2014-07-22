@@ -1,15 +1,34 @@
-- senaponin
-- sonofnasser
-- jelitodeleon
-- zachacole
-- brenton_clarke
-- mrpaddingtonbear
-- local_milk
-- lukesbeard
-- 13thwitness
-- flockoffools
-- patrickgwalsh
-- samuelelkins
-- jeffreydgerson
-- benjaminheath
-- markweaver
+- date: 22-07-2014
+  photographers:
+    - username: senaponin
+      curator: lukesbeard
+    - username: sonofnasser
+      curator: lukesbeard
+    - username: jelitodeleon
+      curator: lukesbeard
+- date: 21-07-2014
+  photographers:
+    - username: brenton_clarke
+      curator: zachacole
+    - username: mrpaddingtonbear
+      curator: zachacole
+    - username: local_milk
+      curator: zachacole
+- date: 20-07-2014
+  photographers:
+    - username: 13thwitness
+      curator: lukesbeard
+    - username: flockoffools
+      curator: lukesbeard
+    - username: patrickgwalsh
+      curator: lukesbeard
+- date: 19-07-2014
+  photographers:
+    - username: samuelelkins
+      curator: zachacole
+    - username: jeffreydgerson
+      curator: zachacole
+    - username: benjaminheath
+      curator: zachacole
+    - username: markweaver
+      curator: zachacole

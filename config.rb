@@ -1,3 +1,5 @@
+require 'date'
+
 ###
 # Instagram
 ###
@@ -31,6 +33,11 @@ helpers do
     client = Instagram.client()
     users = Instagram.user_search(username)
     users[0].full_name
+  end
+
+  def datify(date)
+    daily = Time.parse(date)
+    "<h3>#{daily.strftime("%d")}<sup>#{daily.day.ordinalize.gsub(/[^a-zA-Z ]/,'').gsub(/ +/,' ')}</sup> #{daily.strftime("%B")}</h3>"
   end
 end
 

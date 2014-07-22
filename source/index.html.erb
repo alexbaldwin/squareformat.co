@@ -11,35 +11,38 @@ title: Discover new Instagram photgraphers, every day | SquareFormat
     <a class="contribute" href="mailto:hello@squareformat.co?subject=You Should Feature" title="Contribute">Suggest an Instagram photographer</a>
   </header>
   <article>
-    <div class="list-date">
-      <h3>19<sup>th</sup> July</h3>
-    </div>
-    <ul class="list-reset insta-people">
-      <% data.photographers.each do |photographer| %>
-        <li class="mb2 block clearfix">
-          <a href="http://instagram.com/<%= photographer %>" class="dark-gray">
-            <section class="relative">
-              <header class="z1 clearfix absolute absolute-center smooth-sailing">
-                <%= image_tag(avatar(photographer), class: 'left mr2') %>
-                <div class="insta-meta smooth-sailing oh">
-
-                  <h1 class="h1 m0 ellipsis">@<%= photographer %></h1>
-                  <h2 class="p m0 regular ellipsis"><%= full_name(photographer) %></h2>
+    <% data.photographers.each do |day| %>
+      <div class="list-date">
+        <%= datify(day.date) %>
+      </div>
+      <ul class="list-reset insta-people">
+        <% day.photographers.each do |photographer| %>
+          <li class="mb2 block clearfix">
+            <a href="http://instagram.com/<%= photographer.username %>" class="dark-gray">
+              <section class="relative">
+                <header class="z1 clearfix absolute absolute-center smooth-sailing">
+                  <%= image_tag(avatar(photographer.username), class: 'left mr2') %>
+                  <%= image_tag(avatar(photographer.curator), class: 'left') %>
+                  <div class="insta-meta smooth-sailing oh">
+                    <h1 class="h1 m0 ellipsis">@<%= photographer.username %></h1>
+                    <h2 class="p m0 regular ellipsis"><%= full_name(photographer.username) %></h2>
+                    <h2 class="p m0 regular ellipsis">Curated by: <%= full_name(photographer.curator) %></h2>
+                  </div>
+                </header>
+                <div class="table table-fixed">
+                  <%= recent_media(photographer.username) %>
                 </div>
-              </header>
-              <div class="table table-fixed">
-                <%= recent_media(photographer) %>
-              </div>
-            </section>
-          </a>
-        </li>
-      <% end %>
-    </ul>
+              </section>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
   </article>
 
   <footer>
     <hr class="sf-logo smooth-sailing">
     <p><b>SquareFormat</b> is an internet thing from <a href="http://simplecasual.com/">Simple Casual</a>, <a href="http://luke.exposure.co">Luke Beard</a> and <a href="https://zachacole.exposure.co/">Zach Cole</a>
-    <p><a class="contribute bb-2" href="mailto:hello@squareformat.co?subject=You Should Feature" title="Contribute">Suggest an Instagram photgrapher or say Hi</a></p>
+    <p><a class="contribute bb-2" href="mailto:hello@squareformat.co?subject=You Should Feature" title="Contribute">Suggest an Instagram photographer or say Hi</a></p>
   </footer>
 </section>
