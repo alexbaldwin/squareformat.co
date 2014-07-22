@@ -125,6 +125,15 @@ header {
 }
 
 .insta-people {
+  position: relative;
+
+  .curator {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 12%;
+    height: auto;
+  }
 }
 
 

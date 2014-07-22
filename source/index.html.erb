@@ -22,11 +22,11 @@ title: Discover new Instagram photgraphers, every day | SquareFormat
               <section class="relative">
                 <header class="z1 clearfix absolute absolute-center smooth-sailing">
                   <%= image_tag(avatar(photographer.username), class: 'left mr2') %>
-                  <%= image_tag(avatar(photographer.curator), class: 'left') %>
+                  <%= image_tag(avatar(photographer.curator), class: 'left curator') %>
                   <div class="insta-meta smooth-sailing oh">
                     <h1 class="h1 m0 ellipsis">@<%= photographer.username %></h1>
                     <h2 class="p m0 regular ellipsis"><%= full_name(photographer.username) %></h2>
-                    <h2 class="p m0 regular ellipsis">Curated by: <%= full_name(photographer.curator) %></h2>
+                    <h4 class="p m0 regular ellipsis">Curated by: <%= full_name(photographer.curator) %></h2>
                   </div>
                 </header>
                 <div class="table table-fixed">
