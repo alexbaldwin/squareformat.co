@@ -132,6 +132,7 @@ header {
     left: 0;
     top: 70%;
     width: 12%;
+    max-width: 5em;
     height: auto;
   }
 }
@@ -237,7 +238,7 @@ footer {
 
     .curator {
       top: 70%;
-      left:55%;
+      left: 55%;
       width: 40px;
     }
 
