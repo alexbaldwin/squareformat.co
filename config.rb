@@ -35,9 +35,13 @@ helpers do
     users[0].full_name
   end
 
+  # Returns date in form "<h3>22<sup>nd</sup> July</h3>"
   def datify(date)
     daily = Time.parse(date)
-    "<h3>#{daily.strftime("%d")}<sup>#{daily.day.ordinalize.gsub(/[^a-zA-Z ]/,'').gsub(/ +/,' ')}</sup> #{daily.strftime("%B")}</h3>"
+    # Use ActiveRecord ordinalize and strip out number.
+    ordinal = daily.day.ordinalize.sub(/[0-9]*/, '')
+    # http://www.ruby-doc.org/core-2.1.1/Time.html#method-i-strftime
+    return daily.strftime("<h3>%-d<sup>#{ordinal}</sup> %B")
   end
 end
 
