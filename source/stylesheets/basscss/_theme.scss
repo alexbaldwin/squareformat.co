@@ -172,7 +172,7 @@ footer {
 
   footer {
     width:90%;
-    margin-top: 40px;
+    margin: 0px auto 40px;
     p {
 
       b {
@@ -180,6 +180,10 @@ footer {
       }
 
       font-size: 18px;
+    }
+
+    a.contribute {
+      font-size: 13px;
     }
 
 
@@ -195,6 +199,8 @@ footer {
 
 
   #global-nav {
+    margin: 0 0 55px 0;
+
     .logo {
 
       h1 {
@@ -213,11 +219,11 @@ footer {
 
   article {
     .list-date {
-      padding: 50px 0 20px 0;
+      padding: 0px 0 40px 0;
 
       h3 {
         font-size: 29px;
-        
+
         sup {
           font-size: 15px;
         }
@@ -236,7 +242,7 @@ footer {
     }
 
     li {
-      margin: 15% 0 15% 0;
+      margin: 15% 0 20% 0;
       position: relative;
 
       &:before {
