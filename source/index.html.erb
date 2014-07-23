@@ -18,7 +18,7 @@ title: Discover new Instagram photgraphers, every day | SquareFormat
       <ul class="list-reset insta-people">
         <% day.photographers.each do |photographer| %>
           <li class="mb2 block clearfix">
-            <a href="http://instagram.com/<%= photographer.username %>" class="dark-gray">
+            <a href="http://instagram.com/<%= photographer.username %>" class="dark-gray link-layer">
               <section class="relative">
                 <header class="z1 full-width clearfix absolute absolute-center smooth-sailing">
                   <%= image_tag(avatar(photographer.username), class: 'left mr2') %>

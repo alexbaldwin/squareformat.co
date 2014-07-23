@@ -135,6 +135,7 @@ header {
     width: 12%;
     max-width: 5em;
     height: auto;
+    z-index: 99999;
   }
 }
 
@@ -238,6 +239,7 @@ footer {
 
   #global-nav {
     margin: 0 0 55px 0;
+    padding: 11% 0;
 
     .logo {
 
