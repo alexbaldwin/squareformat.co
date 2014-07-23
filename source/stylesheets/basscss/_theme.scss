@@ -125,8 +125,10 @@ header {
 }
 
 .insta-people {
-  position: relative;
 
+  a {
+    font-weight: bold;
+  }
 
   .curator {
     position: absolute;
@@ -137,6 +139,14 @@ header {
     height: auto;
     z-index: 99999;
   }
+}
+
+h1 {
+   a {
+        &:hover {
+          border:none;
+        }
+      }
 }
 
 .social-push {

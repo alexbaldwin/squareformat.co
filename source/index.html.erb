@@ -26,9 +26,15 @@ title: Discover new Instagram photgraphers, every day | SquareFormat
                     <%= image_tag(avatar(photographer.curator), class: 'left curator') %>
                   <% end %>
                   <div class="insta-meta smooth-sailing oh">
-                    <h1 class="h1 m0 ellipsis">@<%= photographer.username %></h1>
+                    <h1 class="h1 m0 ellipsis">
+                      <a href="http://instagram.com/<%= photographer.username %>" class="dark-gray link-layer">@<%= photographer.username %></a>
+                    </h1>
                     <h2 class="p m0 regular ellipsis"><%= full_name(photographer.username) %></h2>
-                    <h4 class="p m0 regular ellipsis">Curated by <%= full_name(photographer.curator) %></h2>
+                    <h4 class="p m0 regular ellipsis">
+                      Curated by 
+                        <% link_to "http://instagram.com/#{photographer.curator}", alt: "Curated by @#{photographer.curator}" do %><%= full_name(photographer.curator) %>
+                      <% end %>
+                   </h2>
                   </div>
                 </header>
                 <div class="table table-fixed">
