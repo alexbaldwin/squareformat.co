@@ -82,7 +82,11 @@ article {
     padding: 6% 0;
 
     h3 {
+      display: inline-block;
+      line-height: normal;
+      padding:0 0 0 0;
       font-size: 4vw;
+      border-bottom:solid 1px #efefef
     }
 
   }
