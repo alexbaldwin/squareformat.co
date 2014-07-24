@@ -203,9 +203,11 @@ footer {
   padding: 4% 0 0 0;
 
   input {
-    -webkit-apperance:none;
+    -webkit-appearance:none;
     border: solid 1px #ccc;
     padding: 10px;
+    border-radius: 0;
+    margin: 0 0 5px 0;
   }
 
   #mce-EMAIL {
