@@ -261,7 +261,23 @@ footer {
   html {
     overflow-x:hidden;
   }
+
+  #subscribe {
+    input {
+      text-align: center;
+    }
+
+    #mce-EMAIL {
+      width: 189px;
+    }
+  }
   
+
+  .tweet-dis-shit {
+    -webkit-transform: scale(0.7);
+    padding: 33px 0 0 0;
+    margin-bottom: -22px;
+  }
 
   .social-push {
   padding: 0 0 15% 0;
