@@ -134,6 +134,18 @@ header {
 
 .insta-people {
 
+  .link-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    border:none;
+  }
+
+  header {
+    z-index: 99999;
+  }
+
   a {
     font-weight: bold;
   }
