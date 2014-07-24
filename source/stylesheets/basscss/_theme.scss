@@ -199,6 +199,36 @@ footer {
   }
 }
 
+#mc-embedded-subscribe-form {
+  padding: 4% 0 0 0;
+
+  input {
+    -webkit-apperance:none;
+    border: solid 1px #ccc;
+    padding: 10px;
+  }
+
+  #mce-EMAIL {
+    &:focus {
+      outline:none;
+      border-color:#000;
+    }
+  }
+
+  #mc-embedded-subscribe {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover {
+      opacity:0.5;
+    }
+  }
+}
+
 .bb-2 {
   border-bottom: 2px solid #000;
 }
