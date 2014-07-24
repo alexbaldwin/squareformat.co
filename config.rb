@@ -41,7 +41,7 @@ helpers do
     # Use ActiveRecord ordinalize and strip out number.
     ordinal = daily.day.ordinalize.sub(/[0-9]*/, '')
     # http://www.ruby-doc.org/core-2.1.1/Time.html#method-i-strftime
-    return daily.strftime("<h3>%-d<sup>#{ordinal}</sup> %B</h3>")
+    return daily.strftime("<h3>%-d<sup>#{ordinal}</sup> of %B</h3>")
   end
 end
 
