@@ -2,8 +2,6 @@
   photographers:
     - username: trashhand
       curator: jasontsay
-    - username: redgaskell
-      curator: jasontsay
     - username: kat_in_nyc
       curator: jimram
     - username: yeesus
@@ -18,6 +16,8 @@
       curator: miles
     - username: tedcraig
       curator: jimram
+    - username: redgaskell
+      curator: jasontsay
 - date: 24-07-2014
   photographers:
     - username: iqonicd
