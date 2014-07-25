@@ -31,7 +31,7 @@ title: Discover new Instagram photgraphers, every day | SquareFormat
               <section class="relative">
                 <header class="z1 full-width clearfix absolute absolute-center smooth-sailing">
                   <%= image_tag(avatar(photographer.username), class: 'left mr2') %>
-                  <% link_to "http://instagram.com/#{photographer.curator}", alt: "Curated by @#{photographer.curator}" do %>
+                  <% link_to "http://instagram.com/#{photographer.curator}", alt: "Suggested by @#{photographer.curator}" do %>
                     <%= image_tag(avatar(photographer.curator), class: 'left curator') %>
                   <% end %>
                   <div class="insta-meta smooth-sailing oh">
