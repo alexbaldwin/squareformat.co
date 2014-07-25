@@ -1,25 +1,25 @@
 - date: 25-07-2014
   photographers:
     - username: samalive
-    curator: jasontsay
+      curator: jasontsay
     - username: trashhand
-    curator: jasontsay
+      curator: jasontsay
     - username: redgaskell
-    curator: jasontsay
+      curator: jasontsay
     - username: tedcraig
-    curator: jimram
+      curator: jimram
     - username: kat_in_nyc
-    curator: jimram
+      curator: jimram
     - username: yeesus
-    curator: peternudo
+      curator: peternudo
     - username: mike_monaghan
-    curator: lauren_e_short
+      curator: lauren_e_short
     - username: chivexp
-    curator: deanbradshaw
+      curator: deanbradshaw
     - username: exif
-    curator: dambil
+      curator: dambil
     - username: tomcadrin
-    curator: miles
+      curator: miles
 - date: 24-07-2014
   photographers:
     - username: iqonicd
