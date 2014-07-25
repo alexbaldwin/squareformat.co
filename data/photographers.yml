@@ -1,13 +1,9 @@
 - date: 25-07-2014
   photographers:
-    - username: samalive
-      curator: jasontsay
     - username: trashhand
       curator: jasontsay
     - username: redgaskell
       curator: jasontsay
-    - username: tedcraig
-      curator: jimram
     - username: kat_in_nyc
       curator: jimram
     - username: yeesus
@@ -20,6 +16,8 @@
       curator: dambil
     - username: tomcadrin
       curator: miles
+    - username: tedcraig
+      curator: jimram
 - date: 24-07-2014
   photographers:
     - username: iqonicd
