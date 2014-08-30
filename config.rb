@@ -5,8 +5,8 @@ require 'date'
 ###
 
 Instagram.configure do |config|
-  config.client_id = "4b696399c87d46a1a5638051aba4d589"
-  config.client_secret = "7804bd73bd4a4057933e54227b58c34b"
+  config.client_id = "d58c2933e8d64785b2710e5f6ae0a530"
+  config.client_secret = "2f14a46ad961463e9aca89ebf5e6ab66"
 end
 
 # activate :livereload

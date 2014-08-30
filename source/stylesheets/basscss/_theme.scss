@@ -179,7 +179,7 @@ h1 {
   padding: 5% 0 0 0;
   text-align: center;
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     display:none;
   }
 
