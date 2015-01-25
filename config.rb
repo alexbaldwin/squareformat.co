@@ -21,18 +21,25 @@ helpers do
       html << "<div class='table-cell'><img src='#{photo.images.standard_resolution.url}' class='fit opacity-25 smooth-sailing'></div>"
     end
     html
+
+  rescue
+    username
   end
 
   def avatar(username)
     client = Instagram.client()
-    users = Instagram.user_search(username)
+    users = client.user_search(username)
     users[0].profile_picture
+  rescue
+    username
   end
 
   def full_name(username)
     client = Instagram.client()
-    users = Instagram.user_search(username)
+    users = client.user_search(username)
     users[0].full_name
+  rescue
+    username
   end
 
   # Returns date in form "<h3>22<sup>nd</sup> July</h3>"
